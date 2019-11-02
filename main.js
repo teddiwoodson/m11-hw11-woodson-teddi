@@ -6,8 +6,8 @@ function loopThrough() {
 
   const changeColor = () => this.classList.toggle('red');
 
-  for (let i = 0; i < this.textContent.length; i++) {
-
+  for (let i = 0; i < this.textContent.length * 2; i++) {
+    setTimeout(changeColor, i * 1000);
   };
 
 };
